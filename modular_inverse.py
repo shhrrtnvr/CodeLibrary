@@ -20,7 +20,10 @@ def inv2(a, mod):
         a, b = a*a % mod, b >> 1
     return res
 
+#using builtin pow instead of custom binary exponentiation
+def inv3(a, mod):
+    return pow(a, mod-2, mod)
 
 if __name__ == '__main__':
     a, m = 13, 11
-    print(inv1(a, m) == inv2(a, m))
+    print(inv1(a, m) == inv3(a, m) and inv2(a, m) == inv3(a, m))
