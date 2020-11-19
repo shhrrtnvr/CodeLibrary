@@ -1,12 +1,12 @@
 # using extended gcd start
 def inv1(a, mod):
-    def _gcd(_a, _b):
-        if _b == 0:
-            return _a, 1, 0
-        _g, _x, _y = _gcd(_b, _a % _b)
-        return _g, _y, _x - _y * (_a // _b)
+    def gcd(a, b):
+        if b == 0:
+            return a, 1, 0
+        g, x, y = gcd(b, a % b)
+        return g, y, x - y * (a // b)
 
-    g, x, y = _gcd(a, mod)
+    g, x, y = gcd(a, mod)
     if g == 1:
         return ((x % mod) + mod) % mod
 
