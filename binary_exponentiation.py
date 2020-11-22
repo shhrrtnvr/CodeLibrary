@@ -33,4 +33,4 @@ def bin_pow_mod(a, b, m):
 if __name__ == '__main__':
     print(bin_pow(37, 89) % 17)
     print(bin_pow_mod(37, 89, 17))
-    print(bin_pow_builtin(37, 89, 17))
+    print(pow_is_binpow(37, 89, 17))
