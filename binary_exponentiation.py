@@ -1,3 +1,11 @@
+#fastest builtin function
+'''
+It takes a, b, mod all 3 arguments
+'''
+
+bin_pow_builtin = pow
+
+
 # binary exponentiation start
 def bin_pow(a, b):
     res = 1
@@ -25,3 +33,4 @@ def bin_pow_mod(a, b, m):
 if __name__ == '__main__':
     print(bin_pow(37, 89) % 17)
     print(bin_pow_mod(37, 89, 17))
+    print(bin_pow_builtin(37, 89, 17))
