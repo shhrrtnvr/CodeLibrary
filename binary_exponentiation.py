@@ -3,7 +3,7 @@
 It takes a, b, mod all 3 arguments
 '''
 
-bin_pow_builtin = pow
+pow_is_binpow = pow
 
 
 # binary exponentiation start
